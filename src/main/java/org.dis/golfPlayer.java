@@ -1,16 +1,17 @@
 package org.dis;
-import com.opencsv;
+
+import com.opencsv.bean.CsvBindByName;
 
 public class golfPlayer {
-    @CSVBindByName
+    @CsvBindByName
     private int Posicion;
-    @CSVBindByName
+    @CsvBindByName
     private String Nombre;
-    @CSVBindByName
+    @CsvBindByName
     private String Apellido;
-    @CSVBindByName
+    @CsvBindByName
     private String Pais;
-    @CSVBindByName
+    @CsvBindByName
     private int Edad;
 
 
