@@ -1,23 +1,30 @@
 package org.dis;
-public class golfPlayer {
+import com.opencsv;
 
-    private int posicion;
-    private String nombre;
-    private String apellido;
-    private String pais;
-    private int edad;
+public class golfPlayer {
+    @CSVBindByName
+    private int Posicion;
+    @CSVBindByName
+    private String Nombre;
+    @CSVBindByName
+    private String Apellido;
+    @CSVBindByName
+    private String Pais;
+    @CSVBindByName
+    private int Edad;
 
 
     public golfPlayer(int posicion, String nombre, String apellido, String pais, int edad) {
-        this.posicion = posicion;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.pais = pais;
+        this.Posicion = posicion;
+        this.Nombre = nombre;
+        this.Apellido = apellido;
+        this.Pais = pais;
+        this.Edad = edad;
     }
 
     @Override
     public String toString() {
-        return "Posicion=" + posicion + ", Nombre=" + nombre + ", Apellido=" + apellido + ", Pais=" + pais;
+        return "Posicion=" + Posicion + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Pais=" + Pais;
     }
 
 }
